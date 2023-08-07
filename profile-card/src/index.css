@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --primary-color: #211e5c;
+  --white-text-color: #dddddd;
+  --border-color: #f7e018;
+  --skill-bg: #6b61bb;
+}
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dosis", sans-serif;
+  background-color: #d4c5fc;
+  height: 100vh;
+  width: 100%;
+}
+.profile-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 3rem;
+}
+.profile-card.dark {
+  background-color: var(--primary-color);
+  color: var(--white-text-color);
+  border-radius: 30px;
+}
+.profile-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.profile-image:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -9px;
+  height: 108%;
+  width: 108%;
+  border-bottom: 3px solid var(--border-color);
+  border-right: 3px solid var(--border-color);
+  border-left: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  transform: rotate(-80deg);
+}
+.profile-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.profile-name {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercasess;
+}
+.profile-proficient {
+  font-size: 18px;
+  color: #79697c;
+  margin-top: 0.3rem;
+}
+.profile-description {
+  margin-top: 1.5rem;
+  text-align: center;
+  word-spacing: 1px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.skill {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.skill {
+  background-color: var(--border-color);
+  color: #000;
+}
+.profile-email {
+  background-color: var(--skill-bg);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
