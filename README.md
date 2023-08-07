@@ -1,6 +1,6 @@
 100DaysOfCode
 
-##Projects
+## Projects
 
 1.Pizza menu
 2.Profile card
