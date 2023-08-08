@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.counter {
+  width: 400px;
+  height: auto;
+  background-color: rgb(233, 221, 245);
+  border-radius: 5px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.count span {
+  margin: 0 10px;
+}
+.counter .btn {
+  background-color: blueviolet;
+  /* height: 25px; */
+  width: 30px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 2px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.step {
+  margin-bottom: 15px;
+}
