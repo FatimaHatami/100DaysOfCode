@@ -8,11 +8,15 @@ const initialItems = [
 ];
 
 const App = () => {
+  const [items, setItems] = useState([]);
+  const addNewItemHandle = (item) => {
+    setItems((items) => [...items, item]);
+  };
   return (
     <div className="app">
       <Logo />
-      <Form />
-      <List />
+      <Form addItem={addNewItemHandle} />
+      <List items={items} />
       <Stats />
     </div>
   );
@@ -21,7 +25,7 @@ const App = () => {
 const Logo = () => {
   return <h1> 🌳 Far Away 💼</h1>;
 };
-const Form = () => {
+const Form = ({ addItem }) => {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
@@ -32,6 +36,7 @@ const Form = () => {
       console.log(newItem);
       setDescription("");
       setQuantity(1);
+      addItem(newItem);
     } else return;
   };
 
@@ -55,11 +60,11 @@ const Form = () => {
     </form>
   );
 };
-const List = () => {
+const List = ({ items }) => {
   return (
     <div className="list">
       <ul>
-        {initialItems.map((item) => (
+        {items.map((item) => (
           <Item item={item} key={item.id} />
         ))}
       </ul>
