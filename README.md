@@ -8,3 +8,7 @@
 1. [date counter](https://github.com/FatimaHatami/100DaysOfCode/tree/main/date-counter)
 1. [travel list](https://github.com/FatimaHatami/100DaysOfCode/tree/main/travel-list)
 1. [flash cards](https://github.com/FatimaHatami/100DaysOfCode/tree/main/flash-cards)
+<<<<<<< HEAD
+=======
+
+>>>>>>> ac4333501a6da27f6d92b2650ecbf3d6e7edf2d7
