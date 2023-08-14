@@ -81,9 +81,15 @@ input {
   gap: 3.2rem;
   align-items: center;
 }
+.actions {
+  display: flex;
+  justify-content: center;
+  background-color: #5a3e2b;
+  padding-bottom: 50px;
+}
 
 .actions button,
-.list select {
+.actions select {
   text-transform: uppercase;
   padding: 0.8rem 2.4rem;
   font-size: 1.4rem;
