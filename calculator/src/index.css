@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(
+    to left top,
+    rgba(1, 88, 128, 0.507),
+    rgb(55, 157, 204)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.calculator {
+  background-color: #fff;
+  width: 320px;
+
+  margin: auto;
+  margin-top: 10%;
+}
+.calculator .btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calculator .output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 130px;
+  background-color: rgb(2, 2, 3);
+  color: #f1f1f1;
+  padding: 0 30px;
+}
+.calculator .btn {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.016);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+.calculator .btn:hover,
+.calculator .btn:focus {
+  background-color: rgb(56, 56, 56);
+  color: #f1f1f1;
+}
