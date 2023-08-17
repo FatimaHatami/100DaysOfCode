@@ -41,8 +41,8 @@ body {
   padding: 0 30px;
 }
 .calculator .btn {
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   padding: 10px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.016);
   display: flex;
@@ -50,7 +50,10 @@ body {
   align-items: center;
   cursor: pointer;
   font-weight: 600;
+  border: none;
+  outline: none;
 }
+
 .calculator .btn:hover,
 .calculator .btn:focus {
   background-color: rgb(56, 56, 56);
