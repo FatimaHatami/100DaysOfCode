@@ -30,6 +30,11 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.calculator .btns .btn:first-child,
+.calculator .btns .btn:last-child {
+  width: 240px;
+  /* border: 1px solid red; */
+}
 .calculator .output {
   display: flex;
   flex-direction: column;
@@ -44,7 +49,7 @@ body {
   height: 80px;
   width: 80px;
   padding: 10px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.016);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
