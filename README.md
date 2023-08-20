@@ -8,6 +8,9 @@
 1. [date counter](https://github.com/FatimaHatami/100DaysOfCode/tree/main/date-counter)
 1. [travel list](https://github.com/FatimaHatami/100DaysOfCode/tree/main/travel-list)
 1. [flash cards](https://github.com/FatimaHatami/100DaysOfCode/tree/main/flash-cards)
+1. [accordion](https://github.com/FatimaHatami/100DaysOfCode/tree/main/accordion)
+1. [tip-calculator](https://github.com/FatimaHatami/100DaysOfCode/tree/main/tip-calculator)
+1. [calculator](https://github.com/FatimaHatami/100DaysOfCode/tree/main/calculator)
 <<<<<<< HEAD
 =======
 
