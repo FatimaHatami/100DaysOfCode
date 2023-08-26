@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const FormAddFriend = ({ onAddFriend }) => {
   const id = crypto.randomUUID();
-  const imgText = `https://i.pravatar.cc/48?=`;
+  const imgText = `https://i.pravatar.cc/48?img=${id}`;
   const [newFriend, setNewFriend] = useState({
     name: "",
     imgUrl: imgText,
