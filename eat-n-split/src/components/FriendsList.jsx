@@ -6,7 +6,12 @@ const FriendsList = ({ data, onSelected, selected }) => {
   return (
     <ul className="friends-list">
       {friends.map((friend) => (
-        <Friend friend={friend} onSelected={onSelected} selected={selected} />
+        <Friend
+          friend={friend}
+          onSelected={onSelected}
+          selected={selected}
+          key={crypto.randomUUID()}
+        />
       ))}
     </ul>
   );

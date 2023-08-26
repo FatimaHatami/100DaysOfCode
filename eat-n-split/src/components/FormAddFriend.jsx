@@ -13,18 +13,13 @@ const FormAddFriend = ({ onAddFriend }) => {
 
   const addNewFriendHandler = (e) => {
     e.preventDefault();
-    let newFriends = [];
-    setNewFriend({
-      ...newFriend,
-      id: id,
-      imgUrl: `${imgText}=?${id}`,
-    });
-    console.log(newFriend, newFriends);
+    // setNewFriend({
+    //   ...newFriend,
+    //   id: id,
+    //   imgUrl: `${imgText}=?${id}`,
+    // });
+    console.log(newFriend);
     onAddFriend(newFriend);
-    setNewFriend({
-      name: "",
-      imgUrl: "https://i.pravatar.cc/48?=",
-    });
   };
 
   return (

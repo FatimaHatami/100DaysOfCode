@@ -29,6 +29,12 @@ const App = () => {
   const [isShown, setIsShown] = useState(false);
   const [friends, setFriends] = useState(initialFriends);
   const [selected, setSelected] = useState(null);
+
+  const [bill, setBill] = useState("");
+  const [expensePaidByUser, setExpensePaidByUser] = useState("");
+  const expensePaidByFriend = bill - expensePaidByUser;
+  const [whoIsPaying, setWhoIsPaying] = useState("user");
+
   const handleAddFriend = (friend) => {
     setFriends((friends) => [...friends, friend]);
     setIsShown(false);
@@ -37,6 +43,17 @@ const App = () => {
     // setSelected(friend);
     setSelected((cur) => (cur?.id === friend.id ? null : friend));
     setIsShown(false);
+  };
+
+  const splitBillhandler = (value) => {
+    setFriends((friends) =>
+      friends.map((friend) =>
+        selected.id === friend.id
+          ? { ...friend, balance: friend.balance + value }
+          : friend
+      )
+    );
+    setSelected(null);
   };
   return (
     <div className="app">
@@ -52,7 +69,19 @@ const App = () => {
           {isShown ? "close" : "Add freind"}
         </Button>
       </div>
-      {selected && <FormSplitBill selected={selected} />}
+      {selected && (
+        <FormSplitBill
+          selected={selected}
+          bill={bill}
+          expensePaidByUser={expensePaidByUser}
+          whoIsPaying={whoIsPaying}
+          expensePaidByFriend={expensePaidByFriend}
+          setBill={setBill}
+          setExpensePaidByUser={setExpensePaidByUser}
+          setWhoIsPaying={setWhoIsPaying}
+          onSplitBill={splitBillhandler}
+        />
+      )}
     </div>
   );
 };
