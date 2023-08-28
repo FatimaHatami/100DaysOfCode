@@ -30,6 +30,28 @@ code {
   width: 500px;
   position: relative;
 }
+
+.current-date,
+.items-list p {
+  align-self: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #252525;
+}
+.items-list-text {
+  background-color: rgb(230, 133, 22);
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 40px auto;
+  margin-bottom: 20px;
+}
+.items-list-text span:first-child {
+  margin-bottom: 10px;
+}
+
 .item {
   border: 1px solid #f1f1f1;
   padding: 5px 10px;
@@ -88,7 +110,7 @@ code {
   border: 1px solid #d4d4d4;
   outline: none;
   border-radius: 5px;
-  padding: 5px 0;
+  padding: 5px;
   font-family: inherit;
   margin-bottom: 20px;
 }

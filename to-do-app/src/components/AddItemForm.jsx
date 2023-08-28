@@ -8,8 +8,16 @@ const AddItemForm = ({
   onSetItem,
   setItems,
 }) => {
-  const submitAddItemHandler = () => {
-    // setItems(item);
+  const addNewItemHandler = (item) => {
+    setItems((items) => [...items, item]);
+  };
+
+  const submitAddItemHandler = (e) => {
+    e.preventDefault();
+    const newItem = { item, id: crypto.randomUUID() };
+    addNewItemHandler(newItem);
+    onSetItem("");
+    onSetOpenForm(false);
   };
   return (
     openForm && (
@@ -17,6 +25,7 @@ const AddItemForm = ({
         <span onClick={onSetOpenForm}>&#x2715;</span>
         <input
           type="text"
+          placeholder="Add an item..."
           value={item}
           onChange={(e) => onSetItem(e.target.value)}
         />
